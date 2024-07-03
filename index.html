@@ -3,12 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>서유나 포트폴리오</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <title>SEO Yoona</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.8.5/build/spline-viewer.js"></script>
+    <script src="/js/main.js" defer></script>
+    <script src="/js/main_jq.js" defer></script>
 </head>
-<style>
-    
-</style>
 <body>
-    
+    <nav id="nav">
+        <a href="#section1">Home</a>
+        <a href="#section2">About</a>
+        <a href="#section3">Projects</a>
+        <a href="#section4">Contact</a>
+    </nav>
+
+    <div id="section1" class="section">
+        <div class="content">
+            <spline-viewer id="spline-viewer" url="https://prod.spline.design/o8nJ3mdG94GxYrRU/scene.splinecode"></spline-viewer>
+            <spline-viewer id="spline-viewer2" url="https://prod.spline.design/dKNZfGPKOYaIXBsQ/scene.splinecode"></spline-viewer>
+            <div class="logo-after"></div>
+        </div>
+    </div>
+    <div id="section2" class="section">
+        <div class="content">
+            <h1>About me</h1>
+            <div class="con-wrap">
+                <div class="profile-img">
+                    <img src="/img/profile_img.JPEG" alt="profile image">
+                </div>
+                <div class="exp-wrap swiper-container">
+                    <div class="title">Experience</div>
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="com-info">
+                                <div class="name">커머스프로</div>
+                                <div class="working-period">2023. 11 ~ Current</div>
+                                <div class="location">서울시 금천구</div>
+                            </div>
+                            <div class="work">
+                                <div class="work-sum">디자인 및 퍼블리싱</div>
+                                <ul class="work-list">
+                                    <li>자사 솔루션 유지보수</li>
+                                    <li>퍼블리싱</li>
+                                    <li>배너 및 로고 디자인</li>
+                                    <li>상품 상세 페이지 디자인</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="com-info">
+                                <div class="name">클레비</div>
+                                <div class="working-period">2023. 07 ~ 2023. 11</div>
+                                <div class="location">서울시 강남구</div>
+                            </div>
+                            <div class="work">
+                                <div class="work-sum">디자인</div>
+                                <ul class="work-list">
+                                    <li>로고 디자인</li>
+                                    <li>상품 상세페이지 디자인</li>
+                                    <li>의류 라벨 디자인</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="com-info">
+                                <div class="name">다잇당</div>
+                                <div class="working-period">2023. 02 ~ 2023. 07</div>
+                                <div class="location">서울시 강남구</div>
+                            </div>
+                            <div class="work">
+                                <div class="work-sum">디자인</div>
+                                <ul class="work-list">
+                                    <li>간판 디자인</li>
+                                    <li>로고 디자인</li>
+                                    <li>판촉물 디자인</li>
+                                    <li>영상 편집 및 제작</li>
+                                    <li>
+                                        sns 마케팅 관리
+                                        <ul>
+                                            <li>instagram</li>
+                                            <li>naver blog</li>
+                                            <li>youtube</li>
+                                            <li>facebook</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-button-wrap">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="edu-wrap">
+                    <div class="title">Education</div>
+                    <ul class="edu-list">
+                        <li>
+                            <div class="school">
+                                <span class="ico-school"><img src="/img/ico_edu.png" alt=""></span>
+                                경기여자고등학교
+                                <div class="period">2016.03 ~2019.02</div>
+                            </div>
+                            <div class="major">- Highschool</div>
+                        </li>
+                        <li>
+                            <div class="school">
+                                <span class="ico-school"><img src="/img/ico_edu.png" alt=""></span>
+                                Institut supérieur des arts de Toulouse
+                                <div class="period">2019.09 ~ 2020.09</div>
+                            </div>
+                            <div class="major" style="display: flex; flex-direction: column; gap: 8px;">
+                                <span>- Installation art</span>
+                                <span>- Graphic design</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="school">
+                                <span class="ico-school"><img src="/img/ico_edu.png" alt=""></span>
+                                연성대학교
+                                <div class="period">2021.03 ~ 2023.02</div>
+                            </div>
+                            <div class="major">- 경영학과</div>
+                        </li>
+                        <li>
+                            <div class="school">
+                                <span class="ico-school"><img src="/img/ico_edu.png" alt=""></span>
+                                역삼 그린커뮤터 아카데미
+                                <div class="period">2023.07 - 2023.11</div>
+                            </div>
+                            <div class="major">- UI/UX 웹 퍼블리셔 혼합과정</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-wrap">
+                    <div class="title">Skills</div>
+                    <div class="conveyor-belt">
+                        <div class="belt">
+                            <div class="skill-icon">HTML</div>
+                            <div class="skill-icon">CSS</div>
+                            <div class="skill-icon">JavaScript</div>
+                            <div class="skill-icon">JQuery</div>
+                            <div class="skill-icon">Git</div>
+                            <div class="skill-icon">Figma</div>
+                            <div class="skill-icon">Ph</div>
+                            <div class="skill-icon">Ai</div>
+                            <div class="skill-icon">Ae</div>
+                            <div class="skill-icon">Pr</div>
+                            <div class="skill-icon">XD</div>
+                            <!-- 아이콘 세트 복제 -->
+                            <div class="skill-icon">HTML</div>
+                            <div class="skill-icon">CSS</div>
+                            <div class="skill-icon">JavaScript</div>
+                            <div class="skill-icon">JQuery</div>
+                            <div class="skill-icon">Git</div>
+                            <div class="skill-icon">Figma</div>
+                            <div class="skill-icon">Ph</div>
+                            <div class="skill-icon">Ai</div>
+                            <div class="skill-icon">Ae</div>
+                            <div class="skill-icon">Pr</div>
+                            <div class="skill-icon">XD</div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="lang-wrap">
+                    <div class="title">Language</div>
+                    <ul>
+                        <li>
+                            <div><span class="ico-lang"><img src="/img/USA.png" alt=""></span>English</div>
+                            <span>(Fluent)</span>
+                        </li>
+                        <li>
+                            <div><span class="ico-lang"><img src="/img/France.png" alt=""></span>French</div>
+                            <span>(DELF B2)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section3" class="section">
+        <div class="content">
+            <h2>Services</h2>
+            <div class="category">
+              <h3>Web Development</h3>
+              <p>Description of web development services...</p>
+            </div>
+            <div class="category">
+              <h3>Mobile App Development</h3>
+              <p>Description of mobile app development services...</p>
+            </div>
+            <div class="category">
+              <h3>UI/UX Design</h3>
+              <p>Description of UI/UX design services...</p>
+            </div>
+          </div>
+    </div>
+    <div id="section4" class="section">
+        <div class="content">Contact Me</div>
+    </div>
+    <script>
+    </script>
 </body>
 </html>

@@ -1,0 +1,72 @@
+/* home */
+body, html { margin: 0; padding: 0; font-family: Arial, sans-serif; background: #000;}
+html {scroll-behavior: smooth;}
+
+#nav { position: fixed; top: 20px; right: 20px; z-index: 1000;}
+#nav a { color: white; text-decoration: none; margin-left: 20px;}
+
+#spline-viewer { position: fixed; top: 0; left: 0; width: 100% !important; height: 100% !important; z-index: -1;}
+#spline-viewer2 { position: fixed; top: 0; left: 0; width: 100% !important; height: 100% !important; z-index: -1;}
+.logo-after {width: 150px; height: 50px; background: #000; position: absolute; bottom: 10px; right: 10px;}
+
+.container {position: relative;}
+.section {padding: 160px 80px; box-sizing: border-box; min-height: 100vh; color: white; font-size: 2em; transition: background-color .5s ease;}
+.content { opacity: 0; transform: translateY(20px); transition: opacity .5s ease, transform .5s ease; }
+.content.visible { opacity: 1; transform: translateY(0);}
+
+#section1 { position: relative; z-index: 1; height: 100vh;}
+#section1 .content { position: relative; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
+
+/* About me */
+.content h1 {font-size: 2em; font-weight: 600; margin-bottom: 32px;}
+.content .con-wrap { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(4, 1fr); gap: 20px; }
+.content .con-wrap > div {border: 1px solid #d9d9d9; border-radius: 8px; }
+.content .con-wrap > div > .title{padding: 20px; border-bottom: 1px solid #fff; font-weight: 600; font-size: .8em;}
+
+.content .con-wrap .profile-img {grid-column: 1 / 2; grid-row: 1 / 3; background: #d9d9d9; border-radius: 8px; padding: 0; position: relative; overflow: hidden;}
+.content .con-wrap .profile-img img{width: 100%; object-fit: cover; object-position: top; position: absolute; top: 0; height: 100%;}
+
+.content .con-wrap .edu-wrap{grid-column: 1 / 3; grid-row: 3 / 5;}
+.content .con-wrap .edu-wrap ul {display: flex; flex-direction: column; gap: 24px; padding: 20px;}
+.content .con-wrap .edu-wrap ul li {}
+.content .con-wrap .edu-wrap ul li > div{font-size: 16px;}
+.content .con-wrap .edu-wrap .school{display: flex; align-items: center; gap: 10px;}
+.content .con-wrap .edu-wrap .school .ico-school {width: 24px; height: 24px; display: inline-block;}
+.content .con-wrap .edu-wrap .school .ico-school > img {width: 100%; }
+.content .con-wrap .edu-wrap .period{margin-left: auto;}
+.content .con-wrap .edu-wrap .major{margin-top: 10px; padding-left: 52px; }
+
+.content .con-wrap .exp-wrap{grid-column: 2 / 5; grid-row: 1 / 3; position: relative; overflow: hidden;}
+.content .con-wrap .exp-wrap ul{padding: 20px; padding-bottom: 0;}
+.content .con-wrap .exp-wrap ul li{display: flex; gap: 64px;}
+.exp-wrap.swiper-container { width: 100%; height: auto;}
+.exp-wrap .swiper-slide { width: 100%;}
+.exp-wrap .swiper-button-wrap {position: absolute; top: 28px; right: 20px; display: flex; gap: 20px; align-items: center;}
+.exp-wrap .swiper-button-next, .swiper-button-prev {position: static;}
+
+.content .con-wrap .skill-wrap{grid-column: 3 / 5; grid-row: 4 / 5; overflow: hidden; }
+.content .con-wrap .skill-wrap .conveyor-belt { overflow: hidden; width: 100%; padding-top: 20px;}
+.content .con-wrap .skill-wrap .belt { display: flex; width: 200%; animation: slide 20s linear infinite; }
+.content .con-wrap .skill-wrap .skill-icon { flex: 0 0 auto; width: 100px; height: 100px; margin: 0 10px; background-color: #f0f0f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* 아이콘 세트의 절반만큼 이동 */
+    }
+}
+
+.content .con-wrap .lang-wrap{grid-column: 3 / 5; grid-row: 3 / 4;}
+.content .con-wrap .lang-wrap ul{display: flex; justify-content: center; gap: 64px;  padding: 20px; padding-top: 30px;}
+.content .con-wrap .lang-wrap ul li{display: flex; align-items: center; flex-direction: column; gap: 10px;}
+.content .con-wrap .lang-wrap ul li > div {display: flex; gap: 10px; align-items: center;}
+.content .con-wrap .lang-wrap ul li > div > .ico-lang {width: 40px; display: inline-block;}
+.content .con-wrap .lang-wrap ul li > div > .ico-lang > img{width: 100%;}
+.content .con-wrap .lang-wrap ul li > span{font-size: 14px; color: #999;}
+
+/* media query */
+@media (max-width:1024px) {
+    #spline-viewer2 {display: none;}
+    .section {padding: 100px 20px;}
+}
